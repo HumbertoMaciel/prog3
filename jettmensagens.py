@@ -135,7 +135,7 @@ class Cliente:
 servidor=Servidor()
 loop=asyncio.get_event_loop()
  
-start_server = websockets.serve(servidor.conecta, '10.1.131.93', 8765)
+start_server = websockets.serve(servidor.conecta, 'localhost', 8765)
  
 try:
     loop.run_until_complete(start_server)
